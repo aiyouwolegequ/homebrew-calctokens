@@ -6,11 +6,11 @@ class Calctokens < Formula
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v0.8.5/calctokens-macos-arm64",
       tag: "v0.8.5"
-    sha256 "81168cfd990b4742b66088df98dca8da51e0a85a0af7c4f0cf6cb2f479915218"
+    sha256 "826bf8e849f463a77c5386648694c16717b208d545fab3ced4f62311bbe8a95b"
   else
     url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v0.8.5/calctokens-linux",
       tag: "v0.8.5"
-    sha256 "0017936199247917cf7124c3fa89cf0e44e991cd8b49d23a91f70ad5f409a905"
+    sha256 "80b701adc3e740136c338ce9c25c4bf9f534de14abdc5122b53af81411e5db79"
   end
 
   def install
