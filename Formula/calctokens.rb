@@ -6,7 +6,7 @@ class Calctokens < Formula
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v0.8.9/calctokens-macos-arm64",
       tag: "v0.8.9"
-    sha256 "f1be6484dfb8d83c906d087a06c6e84f6420feebb0c0819468525ee1123c9688"
+    sha256 "d6cbd571b5662441659bca19903486e8f59d811e5a46a8623c3b0b685a61529f"
   else
     url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v0.8.9/calctokens-linux",
       tag: "v0.8.9"
