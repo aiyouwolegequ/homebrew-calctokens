@@ -10,7 +10,7 @@ class Calctokens < Formula
   else
     url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v0.8.8/calctokens-linux",
       tag: "v0.8.8"
-    sha256 "0be18cacc4eedf8df1362f7175810111fac10e4f5a113accacc8c3c056d2d445"
+    sha256 "e012c8fb2850f14057284046a8bff6be703fafb8778d2f830845e6d2719c9ffa"
   end
 
   def install
