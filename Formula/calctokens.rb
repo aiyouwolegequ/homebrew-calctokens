@@ -1,23 +1,22 @@
 class Calctokens < Formula
   desc "Token usage report powered by calctokens-core with K/M/B units & RMB conversion"
   homepage "https://github.com/aiyouwolegequ/CalcTokens"
-  version "1.0.2"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v1.0.2/calctokens-macos-arm64",
-      tag: "v1.0.2"
-    sha256 "ee8d3021ae5f3c9c02f7ae787b887acb930ce9f9364d836f5ed2d259c17e34fc"
+    url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v1.0.3/calctokens-macos-arm64",
+      tag: "v1.0.3"
+    sha256 "19fb8cc6c2bb3a94ab4d69650946980c152d4987f38af34b8ae91125b12b51a2"
   else
-    url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v1.0.2/calctokens-linux-x86_64",
-      tag: "v1.0.2"
-    sha256 "56ab829211dbcc8d2ff6a1237218ff99e59918a3e4645e9b888ef19bb65d398c"
+    url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v1.0.3/calctokens-linux-x86_64",
+      tag: "v1.0.3"
+    sha256 "1c4067d2247bdddb87cfe66e5cffb1c3f0cecbfb138cd14ccd97d18287e159cd"
   end
 
   def install
     target = bin/"calctokens"
     bin.mkpath
-    rm_f target
-    FileUtils.cp(cached_download, target)
+    rm target if target.exist?
+    cp cached_download, target
     chmod(0755, target)
   end
 
