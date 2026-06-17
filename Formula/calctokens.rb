@@ -3,13 +3,13 @@ class Calctokens < Formula
   homepage "https://github.com/aiyouwolegequ/CalcTokens"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v1.1.7/calctokens-macos-arm64",
-      tag: "v1.1.7"
-    sha256 "984bccebad6b9640d6ad44dccbd67a208cff0d6cc21aa75e13f29dd5cf5c3a50"
+    url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v1.1.8/calctokens-macos-arm64",
+      tag: "v1.1.8"
+    sha256 "322afa38a527fa1c6bb66a37ca10cae05ec65cd390ceddf14fd513ccd553fde7"
   else
-    url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v1.1.7/calctokens-linux-x86_64",
-      tag: "v1.1.7"
-    sha256 "200b443013bdff97de049c4b1cd6001046642d009f32da147a59dfd79e4b0f98"
+    url "https://github.com/aiyouwolegequ/CalcTokens/releases/download/v1.1.8/calctokens-linux-x86_64",
+      tag: "v1.1.8"
+    sha256 "bd28b53e921ed0193bc94dd89809d6cf1b6b48d309aabbd0a010fc8eccb66d1f"
   end
 
   def install
